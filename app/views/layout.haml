@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %title Ticket Meistah
+    %link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    %script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js") 
+   
+  %body
+    #wrapper
+    #header
+      %nav{:class => "navbar navbar-inverse "}
+        %div{:class => "container-fluid"}
+          %div{:class => "navbar-header"}
+            %a{:class => "navbar-brand", :href => '/'}
+              Ticket Meistah
+          %ul{:class => "nav navbar-nav"} 
+            %li 
+              %a{:href => '/new'} New ticket
+            %li 
+              %a{:href => '/show'} All tickets
+            %li 
+              %a{:href => '/delete_session'} Delete all tickets
+          %ul{:class => "nav navbar-nav navbar-right"} 
+            %li 
+              %a Login
+    #content
+      %div{:class => "container center-block" }
+        =yield
+
+    #footer
+      %footer{:class => 'footer'}
+        %div{:class => 'container'}
+          %p{:class => 'text-muted'} 
+            Creado por Sergio Ferrando -
+            %a{ :href => "https://github.com/Ferrando92/Cinema_Sinatra_Basic/tree/master/views", :title => "My GitHub repository "}
+              link to my GitHub repository
+        
