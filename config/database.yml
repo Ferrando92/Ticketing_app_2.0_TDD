@@ -1,6 +1,6 @@
 development:
-  adapter: postgresql
-  database: tickets
-  username: <%= ENV['admin'] %>
-  password: <%= ENV['admin'] %>
+  adapter: mysql2
+  database: ticketsdb
+  username: <%= ENV['test'] %>
+  password: <%= ENV['pass'] %>
 host: localhost

@@ -3,18 +3,10 @@ require File.dirname(__FILE__) + '/helper_spec'
 describe 'APP TEST' do
 
   before :each do
-      @ticket = Ticket.new(0, 4, "test", "sferrando.92@gmail.com", '111111111')
-      session[:films].add("Suicide Squad")#0
-      session[:films].add("Pets")#1
-      session[:films].add("Cafe Society")#2
-      session[:films].add_as_classic("300", "Tu colega Zack sin poder hacer explotar cosas")
-      session[:films].add("Spotlight")#4
-      session[:films].set_as_film_of_the_week(4)
+      #@ticket = Ticket.new(0, 4, "test", "sferrando.92@gmail.com", '111111111')
+      @films = Film.all
   end
 
-  after :each do
-    session.clear
-  end
 
   describe 'TICKET CREATION' do
     it "get params and create add to session list of tickets" do

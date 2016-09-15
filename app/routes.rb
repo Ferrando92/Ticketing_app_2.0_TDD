@@ -30,6 +30,6 @@ end
 
 delete '/tickets/:id' do
   
-  Article.destroy(params[:id])
+  Ticket.destroy(params[:id])
   
 end
