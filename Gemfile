@@ -6,3 +6,6 @@ gem "sinatra"
 gem "haml"
 gem "pony"
 gem 'rack-cache'
+gem "activerecord"
+gem "sinatra-activerecord"
+gem "pg"

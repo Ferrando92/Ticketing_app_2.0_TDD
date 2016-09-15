@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: tickets
+  username: <%= ENV['admin'] %>
+  password: <%= ENV['admin'] %>
+host: localhost
